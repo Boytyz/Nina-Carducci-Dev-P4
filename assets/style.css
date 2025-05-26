@@ -251,6 +251,89 @@ input[type="submit"] {
 
 }
 
+/* =================================
+   OPTIMISATION CUMULATIVE LAYOUT SHIFT (CLS)
+   ================================= */
+
+/* Stabilisation du carousel */
+#header {
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel,
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Stabilisation de la section À propos */
+#about {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.picture.left {
+    flex-shrink: 0;
+    width: 40%;
+    max-width: 400px;
+}
+
+.picture.left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#about-me {
+    flex: 1;
+}
+
+/* Stabilisation de la galerie */
+.gallery {
+    min-height: 400px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #header {
+        height: 40vh;
+    }
+    
+    #about {
+        flex-direction: column;
+        text-align: center;
+        min-height: 600px;
+    }
+    
+    .picture.left {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
