@@ -40,6 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -247,7 +248,7 @@ input[type="submit"] {
 .carousel-control-prev, .carousel-control-next {
 	opacity: 1;
 	background-color: black;
-	
+
 }
 
 @media all and (max-width: 1180px) {
