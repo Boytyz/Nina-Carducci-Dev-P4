@@ -69,11 +69,6 @@ body {
 }
 
 .picture img {
-	width: 100%;
-
-}
-
-.picture.right {
 	width: 420px;
 	height: 420px;
 	object-fit: cover;
@@ -96,10 +91,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
 }
 .title{
 	text-align: center;
