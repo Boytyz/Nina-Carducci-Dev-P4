@@ -249,11 +249,6 @@ input[type="submit"] {
 
 }
 
-/* =================================
-   OPTIMISATION CUMULATIVE LAYOUT SHIFT (CLS)
-   ================================= */
-
-/* Stabilisation du carousel */
 #header {
     height: 60vh;
     overflow: hidden;
