@@ -442,3 +442,24 @@ input[type="submit"] {
 	}
 }
 
+/* Ajout pour corriger la couleur du filtre actif de la galerie */
+.tags-bar .nav-link.active-tag {
+  color: #fff !important;
+  background-color: #0e0e0e !important;
+  border-radius: 0 !important;
+}
+
+/* Effet au survol des filtres de la galerie */
+.tags-bar .nav-link:hover {
+  background-color: #e0e0e0;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Pour s'assurer que les autres tags restent noirs sur fond blanc */
+.tags-bar .nav-link {
+  color: #000;
+  background-color: transparent;
+}
+
